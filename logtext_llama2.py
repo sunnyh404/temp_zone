@@ -134,6 +134,9 @@ def evaluate(
     inputs = tokenizer(prompt, return_tensors="pt")
     input_ids = inputs["input_ids"].to(device)
     
+    test = tokenizer.encode(prompt)
+    print(len(test))
+    
     decoded_input_ids = tokenizer.decode(input_ids)
     length = len(decoded_input_ids)
     
