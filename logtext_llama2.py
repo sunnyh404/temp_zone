@@ -137,12 +137,12 @@ def evaluate(
     test = tokenizer.encode(prompt)
     print(len(test))
     
-    decoded_input_ids = tokenizer.decode(input_ids)
-    length = len(decoded_input_ids)
+    # decoded_input_ids = tokenizer.decode(input_ids)
+    # length = len(decoded_input_ids)
     
-    print(type(decoded_input_ids))
-    print(decoded_input_ids)
-    print(length)
+    # print(type(decoded_input_ids))
+    # print(decoded_input_ids)
+    # print(length)
     
     generation_config = GenerationConfig(
         temperature=temperature,
